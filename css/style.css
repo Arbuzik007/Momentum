@@ -1,0 +1,180 @@
+body{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+}
+
+/* Музыка */
+
+.player{
+	position: absolute;
+	z-index: 1000;
+	font-family: 'Roboto', sans-serif;
+}
+.btn{
+	border: none;
+	background: none;
+}
+.playlist{
+	position: absolute;
+	z-index: 1000;
+	list-style: none;
+}
+.playlist button{
+	background: none;
+	color: white;
+	border: none;
+	font-size: 20px;
+	width: 180px;
+	text-align: left;
+}
+.playlist li{
+	text-decoration: none;
+	padding-left: 25px;
+    position: relative;
+	font-size: 30px;
+}
+.playlist li:before{
+    content: '✔';
+    position: absolute; top: 0; left: 0;
+    color: white;
+}
+
+/* Время */
+
+.clockpage {
+	position: absolute;
+	display: block;
+	justify-content: center;
+	top: 40%;
+	left: 33%;
+	color: white;
+	font-size: 18px;
+	z-index: 1000;
+	margin-bottom: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+.time{
+	font-size: 100px;
+	font-weight: bold;
+}
+.date{
+	font-size: 25px;
+	align-items: center;
+	margin-left: 23%;
+}
+#clock_three {
+	font-family: 'Arial', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+	font-size: 30px;
+	margin-top: 3%;
+}
+.name {
+	background: none;
+	border: none;
+	color: #ffffff;
+	text-align: left;
+	font-size: 25px;
+	margin-left: 10px;
+}
+.name:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+	background: none;
+}
+.name::-webkit-input-placeholder { color: rgb(195, 195, 195); }
+
+/* Цитаты */
+
+.change-quote {
+	position: absolute;
+	border: none;
+	background: none;
+	width: 70px;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 80%;
+	left: 50%;
+}
+.change-quote:hover {
+	width: 75px;
+	height: 75px;
+}
+.change-quote_img {
+	width: 100%;
+	height: 100%;
+}
+.quote{
+	position: absolute;
+	color: black;
+	border: none;
+	background: none;
+	color: white;
+	font-size: 16px;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	top: 90%;
+	/* left: 20%; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Слайдер */
+
+.slider {
+	padding: 0;
+	min-width: 0;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+
+}
+.slider .slick-arrow{
+	position: absolute;
+	top: 50%;
+	z-index: 1000;
+	font-size: 0;
+	width: 32px;
+	height: 32px;
+	border: none;
+}
+.slider .slick-arrow.slick-prev{
+	left: 0;
+	background: url('../assets/svg/slider-prev.svg') 0 0 / 100% no-repeat;
+	margin-left: 20px;
+}
+.slider .slick-arrow.slick-next{
+	right: 0;
+	background: url('../assets/svg/slider-next.svg') 0 0 / 100% no-repeat;
+	margin-right: 20px;
+}
+.slider__item{
+	top:0;
+    left:0; 
+    width:100%;
+    height:100%;
+	background: #000;
+}
+.slider__item img{
+	width: 100%;
+	width: 100%;
+	opacity: .7;
+}
+.slick-list {
+	overflow: hidden;
+}
+.slick-track{
+    display: flex;
+	align-items: flex-start;
+}
+
+/* Погода */
+

@@ -1,0 +1,119 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+/* 
+body {
+	width: 100%;
+	min-height: 100vh;
+} */
+
+.slider {
+	min-width: 0;
+	position: relative;
+}
+
+.slider .slick-arrow{
+	position: absolute;
+	top: 50%;
+	z-index: 1000;
+	font-size: 0;
+	width: 32px;
+	height: 32px;
+	border: none;
+}
+
+.slider .slick-arrow.slick-prev{
+	left: 0;
+	background: url('../img/slider-prev.svg') 0 0 / 100% no-repeat;
+	margin-left: 20px;
+}
+
+.slider .slick-arrow.slick-next{
+	right: 0;
+	background: url('../img/slider-next.svg') 0 0 / 100% no-repeat;
+	margin-right: 20px;
+}
+
+.slider__item{
+	top:0;
+    left:0; 
+    max-width:100%;
+    max-height:100%;
+}
+
+.slider__item img{
+	width: 100%;
+	width: 100%;
+}
+
+.slider .slick-dots{
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+}
+
+ .slider .slick-dots li{
+	 list-style: none;
+	 margin: 0 8px;
+ }
+
+.slider .slick-dots button{
+	font-size: 0;
+	width: 15px;
+	height: 15px;
+	background-color: rgb(182, 182, 182);
+	border: none;
+	border-radius: 50%;
+}
+
+.slider .slick-dots li.slick-active button{
+	background-color: rgb(214, 214, 214);
+}
+
+.slick-list {
+	overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+	align-items: flex-start;
+}
+
+
+/* Слайдер */
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{} 
