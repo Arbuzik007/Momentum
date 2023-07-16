@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <title>Momentum</title>
+
+  <!-- <meta name="description" content="This jQuery Plugin allows you to add Audio Player with the Playlist into your sites.">
+  <meta name="keywords" content="music playlist, audio player, mp3, playlist, js, javascript, jquery, plugin">
+  <meta name="author" content="MuseTemplatesPro">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" href="https://www.musetemplatespro.com/preview/codecan/musicplaylistjs/css/musicPlaylist.min.css"> -->
+</head>
+<body>
+
+    <!-- player -->
+
+
+    <div class="player">
+      <div class="controls">
+        <button class="btn prev"><img src="assets\svg\play-prev.svg"></button>
+        <button class="btn play"><img src="assets\svg\pause.svg"></button>
+        <button class="btn next"><img src="assets\svg\play-next.svg"></button>
+      </div>
+      <ul class="playlist">
+        <li><button href="\assets\sounds\Aqua Caelestis.mp3">Aqua Caelestis</button></li>
+        <li><button href="\assets\sounds\River Flows In You.mp3">River Flows In You</button></li>
+        <li><button href="\assets\sounds\Summer Wind.mp3">Summer Wind</button></li>
+        <li><button href="\assets\sounds\Ennio Morricone.mp3">Ennio Morricone</button></li>
+      </ul>
+    </div>
+
+
+    <!-- weather -->
+
+    <!-- https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key} -->
+    <!-- <div class="weather">
+      <input type="text" class="city" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div> -->
+
+
+    <!-- slider -->
+
+
+    <div class="slider">
+      <div class="slider__item">
+          <img src="assets/img/bg.jpg">
+      </div>
+      <div class="slider__item">
+          <img src="assets/img/bg_2.jpg">
+      </div>
+      <div class="slider__item">
+          <img src="assets/img/bg_3.jpg">
+      </div>
+      <div class="slider__item">
+          <img src="assets/img/bg_4.jpg">
+      </div>
+      <div class="slider__item">
+          <img src="assets/img/bg_5.jpg">
+      </div>
+      <div class="slider__item">
+          <img src="assets/img/bg_6.jpg">
+      </div>
+      <div class="slider__item">
+          <img src="assets/img/bg_7.jpg">
+      </div>
+      <div class="slider__item">
+          <img src="assets/img/bg_8.jpg">
+      </div>
+      <div class="slider__item">
+          <img src="assets/img/bg_9.jpg">
+      </div>
+      <div class="slider__item">
+          <img src="assets/img/bg_10.jpg">
+      </div>
+      <div class="slider__item">
+          <img src="assets/img/bg_11.jpg">
+      </div>
+      <div class="slider__item">
+          <img src="assets/img/bg_12.jpg">
+      </div>
+      <div class="slider__item">
+        <img src="assets/img/bg_13.jpg">
+      </div>
+      <div class="slider__item">
+          <img src="assets/img/bg_4.jpg">
+      </div>
+      <div class="slider__item">
+          <img src="assets/img/bg_15.jpg">
+      </div>
+      <div class="slider__item">
+          <img src="assets/img/bg_16.jpg">
+      </div>
+      <div class="slider__item">
+          <img src="assets/img/bg_17.jpg">
+      </div>
+      <div class="slider__item">
+        <img src="assets/img/bg_18.jpg">
+      </div>
+      <div class="slider__item">
+        <img src="assets/img/bg_19.jpg">
+      </div>
+      <div class="slider__item">
+        <img src="assets/img/bg_20.jpg">
+      </div>
+    </div>
+
+
+    <!-- date -->
+
+  
+    <div aligh="center" class="clockpage">
+      <div id="clock" class="time"></div>
+      <div class='date' id='time'></div>
+      <div id="clock_three">
+        <span id="good_time"></span>
+        <input class="name" id="name" type="text" placeholder="[Enter name]" autocomplete="off">
+      </div>
+    </div>
+
+
+    <!-- quotes -->
+
+      <button class="change-quote" onclick="getMessage()">
+        <img class="change-quote_img" src="assets\svg\reload.svg">
+      </button>
+      <form id="quotes" name="random">
+        <input type="text" class="quote" name="random" size="78" value="">
+      </form>
+    
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/script.js"></script>
+
+
+  <!-- <script src="https://www.musetemplatespro.com/preview/codecan/musicplaylistjs/vendor/jquery/jquery.min.js"></script>
+  <script src="https://www.musetemplatespro.com/preview/codecan/musicplaylistjs/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://www.musetemplatespro.com/preview/codecan/musicplaylistjs/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="https://www.musetemplatespro.com/preview/codecan/musicplaylistjs/js/scrolling-nav.js"></script>
+  <script src="https://www.musetemplatespro.com/preview/codecan/musicplaylistjs/js/musicPlaylist.min.js"></script> -->
+</body>
+</html>
