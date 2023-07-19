@@ -4,41 +4,81 @@ body{
 	width: 100%;
 }
 
-/* Музыка */
+/* Audio */
 
 .player{
 	position: absolute;
 	z-index: 1000;
 	font-family: 'Roboto', sans-serif;
 }
-.btn{
-	border: none;
-	background: none;
-}
-.playlist{
-	position: absolute;
-	z-index: 1000;
-	list-style: none;
-}
-.playlist button{
-	background: none;
+#myProgress {
+	width: 250px;
+	background-color: #dadada; 
+	cursor: pointer;
+	border-radius: 10px;
+  }
+  #myBar {
+	width: 0%;
+	height: 5px;
+	background-color: white;
+	border-radius: 10px;
+  }
+  .btn-action{
+	cursor: pointer;
+	padding-top: 10px;
+	width: 30px;
+  }
+  .btn-ctn, .infos-ctn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  .infos-ctn{
+  padding-top: 10px;
+  }
+  .infos-ctn > div {
+   margin-bottom: 8px;
+   color: white;
+  }
+  .title{
+	width: 160px;
+	text-align: center;
+  }
+  .player-ctn{
+	width: 250px;
+  }
+  .playlist-track-ctn{
+	display: flex;
+	margin-top: 3px;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  .playlist-track-ctn > div{
+	margin:10px;
+  }
+  .playlist-info-track{
+	width: 80%;
+  }
+  .playlist-info-track,.playlist-duration{
+	padding-top: 7px;
+	padding-bottom: 7px;
 	color: white;
-	border: none;
+	font-size: 14px;
+	pointer-events: none;
+  }
+  .active-track{
+	background: rgba(255, 255, 255, 0.514);
+  }
+  .active-track > .playlist-info-track,.active-track >.playlist-duration,.active-track > .playlist-btn-play{
+	color: white !important;
+  }
+  .playlist-btn-play{
+	pointer-events: none;
+  }
+  .fas{
+	color: white;
 	font-size: 20px;
-	width: 180px;
-	text-align: left;
-}
-.playlist li{
-	text-decoration: none;
-	padding-left: 25px;
-    position: relative;
-	font-size: 30px;
-}
-.playlist li:before{
-    content: '✔';
-    position: absolute; top: 0; left: 0;
-    color: white;
-}
+  }
 
 /* Время */
 

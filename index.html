@@ -9,13 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <title>Momentum</title>
-
-  <!-- <meta name="description" content="This jQuery Plugin allows you to add Audio Player with the Playlist into your sites.">
-  <meta name="keywords" content="music playlist, audio player, mp3, playlist, js, javascript, jquery, plugin">
-  <meta name="author" content="MuseTemplatesPro">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-  <link rel="stylesheet" href="https://www.musetemplatespro.com/preview/codecan/musicplaylistjs/css/musicPlaylist.min.css"> -->
 </head>
 <body>
 
@@ -23,17 +18,44 @@
 
 
     <div class="player">
-      <div class="controls">
-        <button class="btn prev"><img src="assets\svg\play-prev.svg"></button>
-        <button class="btn play"><img src="assets\svg\pause.svg"></button>
-        <button class="btn next"><img src="assets\svg\play-next.svg"></button>
+      <audio id="myAudio" ontimeupdate="onTimeUpdate()">
+        <source id="source-audio" src="" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      
+      <div class="player-ctn">
+        
+        <div class="btn-ctn">
+           <div class="btn-action first-btn" onclick="previous()">
+              <div id="btn-faws-back">
+                <i class='fas fa-step-backward'></i>
+              </div>
+           </div>
+           <div class="btn-action" onclick="toggleAudio()">
+              <div id="btn-faws-play-pause">
+                <i class='fas fa-play' id="icon-play"></i>
+                <i class='fas fa-pause' id="icon-pause" style="display: none"></i>
+              </div>
+           </div>
+           <div class="btn-action" onclick="next()">
+              <div id="btn-faws-next">
+                <i class='fas fa-step-forward'></i>
+              </div>
+           </div>
+        </div>
+      
+        <div class="infos-ctn">
+          <div class="timer">00:00</div>
+          <div class="title"></div>
+          <div class="duration">00:00</div>
+        </div>
+      
+        <div id="myProgress">
+          <div id="myBar"></div>
+        </div>
+      
+        <div class="playlist-ctn"></div>
       </div>
-      <ul class="playlist">
-        <li><button href="\assets\sounds\Aqua Caelestis.mp3">Aqua Caelestis</button></li>
-        <li><button href="\assets\sounds\River Flows In You.mp3">River Flows In You</button></li>
-        <li><button href="\assets\sounds\Summer Wind.mp3">Summer Wind</button></li>
-        <li><button href="\assets\sounds\Ennio Morricone.mp3">Ennio Morricone</button></li>
-      </ul>
     </div>
 
 
@@ -146,12 +168,6 @@
   <script src="js/slick.min.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/script.js"></script>
-
-
-  <!-- <script src="https://www.musetemplatespro.com/preview/codecan/musicplaylistjs/vendor/jquery/jquery.min.js"></script>
-  <script src="https://www.musetemplatespro.com/preview/codecan/musicplaylistjs/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="https://www.musetemplatespro.com/preview/codecan/musicplaylistjs/vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="https://www.musetemplatespro.com/preview/codecan/musicplaylistjs/js/scrolling-nav.js"></script>
-  <script src="https://www.musetemplatespro.com/preview/codecan/musicplaylistjs/js/musicPlaylist.min.js"></script> -->
+  <script src="https://kit.fontawesome.com/a062562745.js" crossorigin="anonymous"></script>
 </body>
 </html>
