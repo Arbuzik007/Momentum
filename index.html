@@ -61,18 +61,19 @@
 
     <!-- weather -->
 
-    <!-- https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key} -->
-    <!-- <div class="weather">
-      <input type="text" class="city" />
-      <i class="weather-icon owf"></i>
-      <div class="weather-error"></div>
-      <div class="description-container">
-        <span class="temperature"></span>
-        <span class="weather-description"></span>
-      </div>
-      <div class="wind"></div>
-      <div class="humidity"></div>
-    </div> -->
+    <div class="container">
+      <form>
+        <label id="label"for="location-input">Location:</label>
+        <input type="text" id="location-input" placeholder="Enter city name">
+        <button type="submit" id="submit-button">Search</button>
+      </form>
+      <div class="weather-icon"></div>
+      <div class="wettertext"></div>
+      <div class="temperature"></div>
+      <div class="feuchtigkeit"></div>
+      <div class="precipitation"></div>
+      <div class="location"></div>
+    </div>
 
 
     <!-- slider -->
